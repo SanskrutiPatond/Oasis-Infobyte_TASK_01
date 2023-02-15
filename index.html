@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header id="myHeader">
+        <nav>
+            <div class="logo">TRAVEL-X</div>
+            <div class="menu">
+                <a href="#">HOME</a>
+                <a href="#">PACKEGES</a>
+                <a href="#">SHOP</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">PAGES</a>
+                <a href="#">NEWS</a>
+                <a href="#">CONTACT</a>
+            </div>
+            <div class="register">
+                <a href="#"> Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="text">
+            <span>Enjoy</span>
+            <h1>
+                International Travel <br />
+                Agency
+            </h1>
+            <br />
+            <a href="#">Book your Trip</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rm">
+            <a href="https://web.whatsapp.com/">
+                <img src="whatsapp.png" alt="" height="50" />
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="insta.png" alt="" height="50" />
+            </a>
+            <a href="https://in.linkedin.com/">
+                <img src="linkedin.png" alt="" height="50" />
+            </a>
+            <a href="https://www.facebook.com/login/">
+                <img src="fb.png" alt="" height="50" />
+            </a>
+            <a
+                href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D">
+                <img src="twitter.png" alt="" height="50" />
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function () {
+            myFunction();
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
